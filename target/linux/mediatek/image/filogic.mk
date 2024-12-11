@@ -807,10 +807,10 @@ define Device/glinet_gl-mt2500
 endef
 TARGET_DEVICES += glinet_gl-mt2500
 
-define Device/mt7981-super3000m
+define Device/mt7981b-super3000m
   DEVICE_VENDOR := cxxxfu
-  DEVICE_MODEL := mt7981-super3000m
-  DEVICE_DTS := mt7981-super3000m
+  DEVICE_MODEL := mt7981b-super3000m
+  DEVICE_DTS := mt7981b-super3000m
   DEVICE_DTS_DIR := ../dts
   DEVICE_DTS_LOADADDR := 0x47000000
   DEVICE_PACKAGES :=-wpad-openssl f2fsck losetup mkf2fs kmod-fs-f2fs kmod-mmc mkf2fs \
@@ -818,7 +818,7 @@ define Device/mt7981-super3000m
   IMAGES := sysupgrade.bin
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
  endef
- TARGET_DEVICES += mt7981-super3000m
+ TARGET_DEVICES += mt7981b-super3000m
 
 define Device/glinet_gl-mt3000
   DEVICE_VENDOR := GL.iNet
